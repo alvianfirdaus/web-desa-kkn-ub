@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan Surat Desa</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ asset('asset_halaman_desa/css/form_penyuratan.css') }}">
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container forms">
+        <div class="form register">
+            <div class="form-content">
+                <header>Pengajuan Surat Keterangan Kelahiran</header>
+                <form action="#" method="#">
+                    <br>
+                    <div id="#"> <!-- Isi Form -->
+                        <div class="mb-3">
+                            <label class="form-label">Nama Bayi</label>
+                            <input type="text" class="form-control" name="nama_bayi" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tanggal Lahir</label>
+                            <input type="text" class="form-control" name="tanggal_lahir" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tempat Lahir</label>
+                            <input type="text" class="form-control" name="tempat_lahir" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Nama Orang Tua</label>
+                            <input type="text" class="form-control" name="nama_ortu" required>
+                        </div>                    
+                        <div class="mb-3">
+                            <label class="form-label">Scan KK Orang Tua</label>
+                            <input type="file" class="form-control" name="scan_kk" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Scan Ktp Orang Tua</label>
+                            <input type="file" class="form-control" name="scan_ktp" required>
+                        </div>
+                    </div> <!-- End -->
+
+                    <button type="submit" class="btn-submit">Ajukan Surat</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
