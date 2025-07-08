@@ -10,7 +10,7 @@
                 <div class="col-md-12">
                     <div class="card card-primary">
                         <div class="card-header card-header-custom">
-                            <h3 class="card-title">Create Warga</h3>
+                            <h3 class="card-title">Tambah Data Perangkat Desa</h3>
                         </div>
                         <form method="POST" action="{{ route('petugas.store') }}" enctype="multipart/form-data">
                             @csrf
@@ -37,9 +37,9 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="nama_lengkap">Nama Warga</label>
+                                    <label for="nama_lengkap">Nama Lengkap</label>
                                     <input type="text" class="form-control @error('nama_lengkap') is-invalid @enderror"
-                                        id="nama_lengkap" name="nama_lengkap" placeholder="Nama Warga"
+                                        id="nama_lengkap" name="nama_lengkap" placeholder="Nama Lengkap"
                                         value="{{ old('nama_lengkap') }}">
                                     @error('nama_lengkap')
                                         <div class="invalid-feedback">{{ $message }}</div>
@@ -202,30 +202,30 @@
                                     <label>Pekerjaan</label>
                                     <select class="form-control select2 @error('pekerjaan') is-invalid @enderror" name="pekerjaan" style="width: 100%;">
 
-                                        <option value="petani" {{ old('pekerjaan') == 'petani' ? 'selected' : '' }}>Petani
-                                        </option>
-                                        <option value="pedagang" {{ old('pekerjaan') == 'pedagang' ? 'selected' : '' }}>Pedagang
-                                        </option>
-                                        <option value="guru" {{ old('pekerjaan') == 'guru' ? 'selected' : '' }}>Guru
-                                        </option>
-                                        <option value="pns" {{ old('pekerjaan') == 'pns' ? 'selected' : '' }}>PNS
-                                        </option>
-                                        <option value="bidan/dokter" {{ old('pekerjaan') == 'bidan/dokter' ? 'selected' : '' }}>Bidan/Dokter
-                                        </option>
-                                        <option value="angkutan_umum" {{ old('pekerjaan') == 'angkutan_umum' ? 'selected' : '' }}>Angkutan Umum
-                                        </option>
-                                        <option value="peternak" {{ old('pekerjaan') == 'peternak' ? 'selected' : '' }}>Peternak
-                                        </option>
-                                        <option value="tukang_bangunan" {{ old('pekerjaan') == 'tukang_bangunan' ? 'selected' : '' }}>Tukang Bangunan
-                                        </option>
-                                        <option value="wiraswasta" {{ old('pekerjaan') == 'wiraswasta' ? 'selected' : '' }}>Wiraswasta
-                                        </option>
-                                        <option value="buruh" {{ old('pekerjaan') == 'buruh' ? 'selected' : '' }}>Buruh
-                                        </option>
-                                        <option value="pelajar" {{ old('pekerjaan') == 'pelajar' ? 'selected' : '' }}>Pelajar
-                                        </option>
-                                        <option value="lainnya" {{ old('pekerjaan') == 'lainnya' ? 'selected' : '' }}>Lainnya
-                                        </option>
+                                        <option value="">-- Pilih Pekerjaan --</option>
+                                            <option value="Kepala Desa">Super Admin</option>
+                                            <option value="Kepala Desa">Kepala Desa</option>
+                                            <option value="Kepala Dusun Bumirejo">Kepala Dusun Bumirejo</option>
+                                            <option value="Ketua RW 12">Ketua RW 12</option>
+                                            <option value="RT 01 RW 12">RT 01 RW 12</option>
+                                            <option value="RT 02 RW 12">RT 02 RW 12</option>
+                                            <option value="RT 03 RW 12">RT 03 RW 12</option>
+                                            <option value="RT 04 RW 12">RT 04 RW 12</option>
+                                            <option value="RT 05 RW 12">RT 05 RW 12</option>
+                                            <option value="Ketua RW 13">Ketua RW 13</option>
+                                            <option value="RT 01 RW 13">RT 01 RW 13</option>
+                                            <option value="RT 02 RW 13">RT 02 RW 13</option>
+                                            <option value="RT 03 RW 13">RT 03 RW 13</option>
+                                            <option value="RT 04 RW 13">RT 04 RW 13</option>
+                                            <option value="Ketua RW 14">Ketua RW 14</option>
+                                            <option value="RT 01 RW 14">RT 01 RW 14</option>
+                                            <option value="RT 02 RW 14">RT 02 RW 14</option>
+                                            <option value="RT 03 RW 14">RT 03 RW 14</option>
+                                            <option value="RT 04 RW 14">RT 04 RW 14</option>
+                                            <option value="Ketua RW 15">Ketua RW 15</option>
+                                            <option value="RT 01 RW 15">RT 01 RW 15</option>
+                                            <option value="RT 02 RW 15">RT 02 RW 15</option>
+                                            <option value="RT 03 RW 15">RT 03 RW 15</option>
                                     </select>
                                     @error('pekerjaan')
                                         <div class="invalid-feedback">{{ $message }}</div>

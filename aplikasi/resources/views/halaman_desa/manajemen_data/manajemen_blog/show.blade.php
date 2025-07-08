@@ -10,7 +10,7 @@
                 <div class="col-md-12">
                     <div class="card card-primary">
                         <div class="card-header card-header-custom">
-                            <h3 class="card-title">Show Blog</h3>
+                            <h3 class="card-title">Lihat Galeri</h3>
                         </div>
                         <form>
                             <div class="card-body">

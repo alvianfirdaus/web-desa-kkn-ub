@@ -59,8 +59,11 @@
 <script>
     // Fungsi animasi number scramble apbn
     function initNumberAnimation() {
-        const pendapatanValue = 2502205800;
-        const belanjaValue = 2288222678;
+        const pendapatanValue = parseInt(document.getElementById('pendapatan').getAttribute('data-target')) || 0;
+        const belanjaValue = parseInt(document.getElementById('belanja').getAttribute('data-target')) || 0;
+
+        animateNumber('pendapatan', pendapatanValue);
+        animateNumber('belanja', belanjaValue);
 
         const options = {
             threshold: 0.5 // Trigger ketika 50% elemen terlihat
@@ -70,8 +73,8 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     // Mulai animasi hanya jika elemen terlihat
-                    animateNumber(document.getElementById('pendapatan'), pendapatanValue);
-                    animateNumber(document.getElementById('belanja'), belanjaValue);
+                    animateNumber('pendapatan', pendapatanValue);
+                    animateNumber('belanja', belanjaValue);
                     observer.unobserve(entry.target); // Berhenti mengamati setelah animasi dimulai
                 }
             });

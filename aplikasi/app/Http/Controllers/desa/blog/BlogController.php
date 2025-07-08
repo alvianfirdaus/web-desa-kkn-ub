@@ -27,7 +27,7 @@ class BlogController extends Controller
             'tanggal' => 'required|date',
             'judul' => 'required',
             'isi' => 'required',
-            'kategori_blog' => 'required|in:berita,pengumuman,parawisata',
+            'kategori_blog' => 'required|in:galery',
             'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ], [
             'tanggal.required' => 'Tanggal harus di isi.',
@@ -72,7 +72,7 @@ class BlogController extends Controller
             'tanggal' => 'required|date',
             'judul' => 'required',
             'isi' => 'required',
-            'kategori_blog' => 'required|in:berita,pengumuman,parawisata',
+            'kategori_blog' => 'required|in:galery',
             'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ], [
             'gambar.max' => 'Ukuran gambar maksimal adalah 2MB.',

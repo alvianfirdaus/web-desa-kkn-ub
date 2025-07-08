@@ -10,7 +10,7 @@
             <div class="col-md-12">
                 <div class="card card-primary">
                     <div class="card-header card-header-custom">
-                        <h3 class="card-title">Create Blog</h3>
+                        <h3 class="card-title">Tambahkan Galeri</h3>
                     </div>
                     <form method="POST" action="{{ route('blog.store') }}" enctype="multipart/form-data">
                         @csrf
@@ -43,12 +43,9 @@
                                 <label>Kategori Blog</label>
                                 <select class="form-control @error('kategori_blog') is-invalid @enderror"
                                     name="kategori_blog">
-                                    <option value="berita"
-                                        {{ old('kategori_blog') == 'berita' ? 'selected' : '' }}>Berita</option>
-                                    <option value="parawisata"
-                                        {{ old('kategori_blog') == 'parawisata' ? 'selected' : '' }}>Parawisata</option>
-                                    <option value="pengumuman"
-                                        {{ old('kategori_blog') == 'pengumuman' ? 'selected' : '' }}>Pengumuman</option>
+                                    <option value="galery"
+                                        {{ old('kategori_blog') == 'galery' ? 'selected' : '' }}>galery</option>
+                            
                                 </select>
                                 @error('kategori_blog')
                                 <div class="invalid-feedback">{{ $message }}</div>

@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.container{
+/* .container{
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -16,6 +16,50 @@
     background-color: #32a523;
     column-gap: 30px;
     padding: 20px 0;
+
+} */
+.container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 20px 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/asset_halaman_desa/img/desa-1.jpg'); /* Ganti path sesuai */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%) blur(4px); /* Redup + Blur */
+    z-index: -1;
+}
+
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 20px 0;
+    
+    /* Ubah background jadi gambar */
+    background-image: url('/asset_halaman_desa/img/background.jpg'); /* Ganti dengan path sesuai gambarmu */
+    background-size: cover;         /* Agar gambar menutupi seluruh area */
+    background-repeat: no-repeat;   /* Jangan ulang gambar */
+    background-position: center;    /* Pusatkan gambar */
 }
 form label {
     align-self: flex-start;

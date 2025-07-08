@@ -33,20 +33,7 @@
                                 <i class="fa-regular fa-newspaper"></i>
                             </a>
 
-                            <form action="#" method="GET" class="form-inline" title="Filter Berdasarkan Status">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-filter"></i></span>
-                                    </div>
-                                    <select name="status" class="form-control" onchange="this.form.submit()">
-                                        <option value="semua" {{ request('status') == 'semua' || !request('status') ? 'selected' : '' }}>Semua Status</option>
-                                        <option value="ditolak" {{ request('status') == 'ditolak' ? 'selected' : '' }}>Ditolak</option>
-                                        <option value="pending" {{ request('status') == 'pending' ? 'selected' : '' }}>Pending</option>
-                                        <option value="diproses" {{ request('status') == 'diproses' ? 'selected' : '' }}>Diproses</option>
-                                        <option value="selesai" {{ request('status') == 'selesai' ? 'selected' : '' }}>Selesai</option>
-                                    </select>
-                                </div>
-                            </form>
+                           
                         </div>
 
                         <!-- Kolom untuk Pencarian -->

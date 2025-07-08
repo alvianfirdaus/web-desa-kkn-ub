@@ -27,6 +27,21 @@
                         <div class="inner">
                             <h3>150</h3>
 
+                            <p>Penduduk</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                            <h3>150</h3>
+
                             <p>Laki-Laki</p>
                         </div>
                         <div class="icon">
@@ -39,7 +54,7 @@
                 <!-- ./col -->
                 <div class="col-lg-3 col-6">
                     <!-- small box -->
-                    <div class="small-box bg-success">
+                    <div class="small-box bg-info">
                         <div class="inner">
                             <h3>143<sup style="font-size: 20px"></sup></h3>
 
@@ -59,7 +74,7 @@
                         <div class="inner">
                             <h3>44</h3>
 
-                            <p>Penduduk Mendaftar</p>
+                            <p>Perangkat Desa</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-person-add"></i>
@@ -75,7 +90,7 @@
                         <div class="inner">
                             <h3>65</h3>
 
-                            <p>Blog Dibuat</p>
+                            <p>Galery</p>
                         </div>
                         <div class="icon">
                             <i class="fa fa-blog"></i>

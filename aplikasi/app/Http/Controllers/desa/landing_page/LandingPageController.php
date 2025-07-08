@@ -6,12 +6,20 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use App\Models\Adminduk;
+use App\Models\Apbd;
+use App\Models\User;
+use App\Models\desa\blog\Blog;
 
 class LandingPageController extends Controller
 {
     public function index()
-    {        
-        return view('halaman_desa.landing_desa');
+    {     $blogs = Blog::all(); // ambil semua data blog
+          $adminduk = Adminduk::first(); // atau ->latest()->first()
+          $apbd = Apbd::first(); // atau ->latest()->first()
+
+          $users = User::select('nama_lengkap', 'pekerjaan', 'foto')->get();
+    return view('halaman_desa.landing_desa', compact('adminduk','apbd','blogs','users'));
     }
 
     

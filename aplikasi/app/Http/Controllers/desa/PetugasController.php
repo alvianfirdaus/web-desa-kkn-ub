@@ -93,7 +93,7 @@ class PetugasController extends Controller
                 'status_perkawinan' => $request->status_perkawinan,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
-                'level' => Auth::user()->level === 'admin' ? $request->level : 'warga',
+                'level' => Auth::user()->level === 'admin' ? $request->level : 'petugas',
                 'foto' => $fotoPath,
                 'no_hp' => $request->no_hp,
                 'id_ktp' => $request->id_ktp,
@@ -215,7 +215,7 @@ class PetugasController extends Controller
             } catch (\Exception $e) {
                 return redirect()->back()->with('error', 'Terjadi kesalahan saat menghapus data.');
             }
-        } elseif (Auth::user()->level === 'petugas' && $user->level === 'warga' && $user->id_desa === Auth::user()->id_desa) {
+        } elseif (Auth::user()->level === 'petugas' ) {
             // Petugas hanya bisa menghapus data warga di desanya sendiri
             try {
                 // Menghapus foto jika ada

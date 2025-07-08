@@ -7373,6 +7373,7 @@ button.bg-dark:focus {
 .align-items-center {
   -ms-flex-align: center !important;
   align-items: center !important;
+  padding-left: 1px !important; /* Atur sesuai keinginan */
 }
 
 .align-items-baseline {

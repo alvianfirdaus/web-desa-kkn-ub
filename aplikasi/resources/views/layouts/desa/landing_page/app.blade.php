@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+
+</style>
+
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -10,7 +13,7 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="{{ asset('asset_halaman_desa/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('asset_halaman_desa/img/malangkab.png') }}" rel="icon">
     <link href="{{ asset('asset_halaman_desa/img/apple-touch-icon.png') }}" rel="apple-touch-icon" />
 
     <!-- Fonts -->
@@ -54,17 +57,17 @@
                 <div class="carousel-inner h-100">
                     <!-- Slide 1 -->
                     <div class="carousel-item active h-100">
-                        <img src="{{ asset('asset_halaman_desa/img/desa-1.jpg') }}"
+                        <img src="{{ asset('asset_halaman_desa/img/aset4.webp') }}"
                             class="carousel-image" alt="Desa Kedungwungu">
                     </div>
                     <!-- Slide 2 -->
                     <div class="carousel-item h-100">
-                        <img src="{{ asset('asset_halaman_desa/img/desa-2.jpg') }}"
+                        <img src="{{ asset('asset_halaman_desa/img/aset2.webp') }}"
                             class="carousel-image" alt="Pemandangan Desa">
                     </div>
                     <!-- Slide 3 -->
                     <div class="carousel-item h-100">
-                        <img src="{{ asset('asset_halaman_desa/img/desa-3.jpg') }}"
+                        <img src="{{ asset('asset_halaman_desa/img/aset3.webp') }}"
                             class="carousel-image" alt="Kegiatan Desa">
                     </div>
                 </div>
@@ -76,19 +79,19 @@
             <!-- Main Content -->
             <div class="main-content">
                 <div class="title-digital-badge">DESA DIGITAL</div>
-                <h1 class="new-hero-title">Desa Pencontohan</h1>
-                <p class="hero-subtitle">Kecamatan Banyuwangi, Kabupaten Kebalenan, Provinsi<br>Jawa Timur</p>
+                <h1 class="new-hero-title">Dusun Bumirejo</h1>
+                <p class="hero-subtitle">Desa Kebobang, Kec. Wonosari, Kabupaten Malang, Provinsi<br>Jawa Timur</p>
 
                 <div class="hero-links">
-                    <a href="#profil"><i class="fas fa-user-circle me-2"></i>Profil Desa</a>
-                    <a href="#layanan"><i class="fas fa-concierge-bell me-2"></i>Layanan Desa</a>
+                    <a href="https://youtu.be/dXsKxpXHhA4?si=yR7M4koFgh9UuL-4"><i class="fas fa-user-circle me-2"></i>Profil Desa</a>
+                    
                 </div>
             </div>
 
             <!-- Features Overlay -->
             <div class="features-overlay">
                 <div class="features-container">
-                    <h3 class="features-title">FITUR UNGGULAN</h3>
+                    <h3 class="features-title">Layanan Desa Digital</h3>
 
                     <div class="feature-list">
                         <div class="feature-item">
@@ -96,8 +99,8 @@
                                 <i class="bi bi-envelope"></i>
                             </div>
                             <div class="feature-content">
-                                <h4 class="feature-title">Layanan Persuratan Desa</h4>
-                                <p class="feature-desc">Layanan penyuratan terpadu</p>
+                                <h4 class="feature-title">Layanan Bantuan Hukum</h4>
+                                <p class="feature-desc">Edukasi Bantuan Hukum </p>
                             </div>
                         </div>
 
@@ -106,8 +109,8 @@
                                 <i class="bi bi-globe-central-south-asia"></i>
                             </div>
                             <div class="feature-content">
-                                <h4 class="feature-title">Infografis Desa</h4>
-                                <p class="feature-desc">Informasi desa</p>
+                                <h4 class="feature-title">Layanan E-Book Hukum</h4>
+                                <p class="feature-desc">E-Book Pengetahuan Hukum</p>
                             </div>
                         </div>
 
@@ -116,8 +119,18 @@
                                 <i class="bi bi-newspaper"></i>
                             </div>
                             <div class="feature-content">
-                                <h4 class="feature-title">Blog Desa</h4>
-                                <p class="feature-desc">Informasi terkini</p>
+                                <h4 class="feature-title">Layanan Pengaduan Masyarakat</h4>
+                                <p class="feature-desc">Pengaduan Masyrakat online</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-pass"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Layanan Persuratan</h4>
+                                <p class="feature-desc">persuratan jual beli barang & jual beli tanah</p>
                             </div>
                         </div>
                     </div>

@@ -16,15 +16,15 @@ class AutentikasiControllerDesa extends Controller
     public function login(Request $request)
     {
         $request->validate([
-            'nik' => 'required|string|size:16',
+            'email' => 'required|email',
             'password' => 'required|string',
         ]);
 
-        if (Auth::attempt(['nik' => $request->nik, 'password' => $request->password])) {
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             return redirect()->route('dashboard_petugas.index');
         }
 
-        return back()->withErrors(['nik' => 'NIK atau password salah.']);
+        return back()->withErrors(['emil' => 'NIK atau password salah.']);
     }
 
     public function logout()

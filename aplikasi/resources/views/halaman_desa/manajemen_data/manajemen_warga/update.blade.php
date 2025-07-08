@@ -10,7 +10,7 @@
                 <div class="col-md-12">
                     <div class="card card-primary">
                         <div class="card-header card-header-custom">
-                            <h3 class="card-title">Update Warga</h3>
+                            <h3 class="card-title">Update Data Pegawai</h3>
                         </div>
                         <form action="{{ route('petugas.update', $user->id) }}" method="POST" enctype="multipart/form-data">
                             @csrf
@@ -33,7 +33,7 @@
 
 
                                 <div class="form-group">
-                                    <label for="nama_lengkap">Nama User</label>
+                                    <label for="nama_lengkap">Nama Lengkap</label>
                                     <input type="text" class="form-control" name="nama_lengkap"
                                         value="{{ $user->nama_lengkap }}" required>
                                 </div>
@@ -146,30 +146,30 @@
                                     <label>Pekerjaan</label>
                                     <select class="form-control select2 @error('pekerjaan') is-invalid @enderror" name="pekerjaan" style="width: 100%;">
 
-                                        <option value="petani" {{ $user->pekerjaan == 'petani' ? 'selected' : '' }}>Petani
-                                        </option>
-                                        <option value="pedagang" {{ $user->pekerjaan == 'pedagang' ? 'selected' : '' }}>Pedagang
-                                        </option>
-                                        <option value="guru" {{ $user->pekerjaan == 'guru' ? 'selected' : '' }}>Guru
-                                        </option>
-                                        <option value="pns" {{ $user->pekerjaan == 'pns' ? 'selected' : '' }}>PNS
-                                        </option>
-                                        <option value="bidan/dokter" {{ $user->pekerjaan == 'bidan/dokter' ? 'selected' : '' }}>Bidan/Dokter
-                                        </option>
-                                        <option value="angkutan_umum" {{ $user->pekerjaan == 'angkutan_umum' ? 'selected' : '' }}>Angkutan Umum
-                                        </option>
-                                        <option value="peternak" {{ $user->pekerjaan == 'peternak' ? 'selected' : '' }}>Peternak
-                                        </option>
-                                        <option value="tukang_bangunan" {{ $user->pekerjaan == 'tukang_bangunan' ? 'selected' : '' }}>Tukang Bangunan
-                                        </option>
-                                        <option value="wiraswasta" {{ $user->pekerjaan == 'wiraswasta' ? 'selected' : '' }}>Wiraswasta
-                                        </option>
-                                        <option value="buruh" {{ $user->pekerjaan == 'buruh' ? 'selected' : '' }}>Buruh
-                                        </option>
-                                        <option value="pelajar" {{ $user->pekerjaan == 'pelajar' ? 'selected' : '' }}>Pelajar
-                                        </option>
-                                        <option value="lainnya" {{ $user->pekerjaan == 'lainnya' ? 'selected' : '' }}>Lainnya
-                                        </option>
+                                        <option value="">-- Pilih Pekerjaan --</option>
+                                        <option value="Kepala Desa" {{ $user->pekerjaan == 'Super Admin' ? 'selected' : '' }}>Super Admin</option>
+                                            <option value="Kepala Desa" {{ $user->pekerjaan == 'Kepala Desa' ? 'selected' : '' }}>Kepala Desa</option>
+                                            <option value="Kepala Dusun Bumirejo" {{ $user->pekerjaan == 'Kepala Dusun Bumirejo' ? 'selected' : '' }}>Kepala Dusun Bumirejo</option>
+                                            <option value="Ketua RW 12" {{ $user->pekerjaan == 'Ketua RW 12' ? 'selected' : '' }}>Ketua RW 12</option>
+                                            <option value="RT 01 RW 12" {{ $user->pekerjaan == 'RT 01 RW 12' ? 'selected' : '' }}>RT 01 RW 12</option>
+                                            <option value="RT 02 RW 12" {{ $user->pekerjaan == 'RT 02 RW 12' ? 'selected' : '' }}>RT 02 RW 12</option>
+                                            <option value="RT 03 RW 12" {{ $user->pekerjaan == 'RT 03 RW 12' ? 'selected' : '' }}>RT 03 RW 12</option>
+                                            <option value="RT 04 RW 12" {{ $user->pekerjaan == 'RT 04 RW 12' ? 'selected' : '' }}>RT 04 RW 12</option>
+                                            <option value="RT 05 RW 12" {{ $user->pekerjaan == 'RT 05 RW 12' ? 'selected' : '' }}>RT 05 RW 12</option>
+                                            <option value="Ketua RW 13" {{ $user->pekerjaan == 'Ketua RW 13' ? 'selected' : '' }}>Ketua RW 13</option>
+                                            <option value="RT 01 RW 13" {{ $user->pekerjaan == 'RT 01 RW 13' ? 'selected' : '' }}>RT 01 RW 13</option>
+                                            <option value="RT 02 RW 13" {{ $user->pekerjaan == 'RT 02 RW 13' ? 'selected' : '' }}>RT 02 RW 13</option>
+                                            <option value="RT 03 RW 13" {{ $user->pekerjaan == 'RT 03 RW 13' ? 'selected' : '' }}>RT 03 RW 13</option>
+                                            <option value="RT 04 RW 13" {{ $user->pekerjaan == 'RT 04 RW 13' ? 'selected' : '' }}>RT 04 RW 13</option>
+                                            <option value="Ketua RW 14" {{ $user->pekerjaan == 'Ketua RW 14' ? 'selected' : '' }}>Ketua RW 14</option>
+                                            <option value="RT 01 RW 14" {{ $user->pekerjaan == 'RT 01 RW 14' ? 'selected' : '' }}>RT 01 RW 14</option>
+                                            <option value="RT 02 RW 14" {{ $user->pekerjaan == 'RT 02 RW 14' ? 'selected' : '' }}>RT 02 RW 14</option>
+                                            <option value="RT 03 RW 14" {{ $user->pekerjaan == 'RT 03 RW 14' ? 'selected' : '' }}>RT 03 RW 14</option>
+                                            <option value="RT 04 RW 14" {{ $user->pekerjaan == 'RT 04 RW 14' ? 'selected' : '' }}>RT 04 RW 14</option>
+                                            <option value="Ketua RW 15" {{ $user->pekerjaan == 'Ketua RW 15' ? 'selected' : '' }}>Ketua RW 15</option>
+                                            <option value="RT 01 RW 15" {{ $user->pekerjaan == 'RT 01 RW 15' ? 'selected' : '' }}>RT 01 RW 15</option>
+                                            <option value="RT 02 RW 15" {{ $user->pekerjaan == 'RT 02 RW 15' ? 'selected' : '' }}>RT 02 RW 15</option>
+                                            <option value="RT 03 RW 15" {{ $user->pekerjaan == 'RT 03 RW 15' ? 'selected' : '' }}>RT 03 RW 15</option>
                                     </select>
                                     @error('pekerjaan')
                                         <div class="invalid-feedback">{{ $message }}</div>

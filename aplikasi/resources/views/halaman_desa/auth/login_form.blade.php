@@ -22,7 +22,7 @@
                 <form method="POST" action="{{ route('petugas.login') }}">
                     @csrf
                     <div class="field input-field">
-                        <input type="number" name="nik" placeholder="Nik" class="input">
+                        <input type="email" name="email" placeholder="email" class="input">
                     </div>
 
                     <div class="field input-field">
@@ -36,10 +36,7 @@
                 </form>
             </div>
             <div class="form-link">
-                <a href="{{ route('desa.lupa_password') }}" class="lupa-pass">Lupa/Ingin Merubah Password?</a>
-            </div>
-            <div class="form-link">
-                <a href="{{ route('pendaftar.form') }}" class="lupa-pass">Halaman Register?</a>
+                <a href="{{ route('landing') }}" class="lupa-pass">Home</a>
             </div>
         </div>
     </section>

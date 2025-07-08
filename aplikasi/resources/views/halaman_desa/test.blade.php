@@ -73,6 +73,7 @@
             display: inline-block;
             margin-bottom: 25px;
             width: fit-content;
+            margin-left: 200%; /* atau 3rem / 50px sesuai selera */
         }
 
         .new-hero-title {

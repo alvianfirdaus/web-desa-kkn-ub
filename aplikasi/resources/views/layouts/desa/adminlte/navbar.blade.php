@@ -1,8 +1,8 @@
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-blue elevation-4" style="background-color: #168d06">
+<aside class="main-sidebar sidebar-dark-blue elevation-4" style="background-color:rgb(21, 30, 60)">
     <!-- Brand Logo -->
     <a href="{{ route('dashboard_petugas.index') }}" class="brand-link" style="color: #f0f0f0;">
-        <img src="{{ asset('storage/' . (Auth::user()->desa->logo_desa ?? 'default_image/default.png')) }}" alt="Logo Desa"
+        <img src="{{ asset('asset_halaman_desa/img/malangkab.png') }}" alt="Logo Desa"
         class="brand-image img-circle elevation-3" style="opacity: .8">
 
         <span class="brand-text font-weight-light" style="color: #f0f0f0;">Admin Desa</span>
@@ -44,14 +44,14 @@
                 <li class="nav-item">
                     <a href="{{ route('petugas.index') }}" class="nav-link" style="color: #f0f0f0;">
                         <i class="nav-icon fa fa-users" style="color: #f0f0f0;"></i>
-                        <p>Manajemen Warga</p>
+                        <p>Akun Perangkat Desa</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a href="{{ route('blog.index') }}" class="nav-link" style="color: #f0f0f0;">
                         <i class="nav-icon fa fa-blog" style="color: #f0f0f0;"></i>
-                        <p>Manajemen Blog</p>
+                        <p>Manajemen Galeri</p>
                     </a>
                 </li>
 
@@ -59,21 +59,22 @@
                     <a href="#" class="nav-link" style="color: #f0f0f0;">
                         <i class="nav-icon fa fa-database"></i>
                         <p>
-                            Manajemen Layanan
+                            Manajemen data
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
+                        
                         <li class="nav-item">
-                            <a href="{{ route('manajemen_surat.index') }}" class="nav-link" style="color: #f0f0f0;">
+                            <a href="{{ route('apbd.index') }}" class="nav-link" style="color: #f0f0f0;">
                                 <i class="far fa-envelope nav-icon"></i>
-                                <p>Persuratan</p>
+                                <p>APBD</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('manajemen_pengaduan.index') }}" class="nav-link" style="color: #f0f0f0;">
+                            <a href="{{ route('adminduk.index') }}" class="nav-link" style="color: #f0f0f0;">
                                 <i class="fa-solid fa-bullhorn nav-icon"></i>
-                                <p style="font-size: 14px;">Pengaduan Masyarakat</p>
+                                <p style="font-size: 14px;">Statistik Penduduk</p>
                             </a>
                         </li>
                     </ul>

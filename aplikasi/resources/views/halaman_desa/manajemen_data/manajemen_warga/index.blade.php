@@ -35,20 +35,8 @@
 
                             <form action="{{ route('petugas.index') }}" method="GET" class="form-inline" title="Filter Berdasarkan Level">
                                 <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-filter"></i></span>
-                                    </div>
-                                    <select name="level" class="form-control" onchange="this.form.submit()">
-                                        <option value="" {{ !request('level') ? 'selected' : '' }}>
-                                            Semua level
-                                        </option>
-                                        <option value="petugas" {{ request('level') == 'petugas' ? 'selected' : '' }}>
-                                            Petugas
-                                        </option>
-                                        <option value="warga" {{ request('level') == 'warga' ? 'selected' : '' }}>
-                                            Warga
-                                        </option>
-                                    </select>
+                                    
+                                    
                                 </div>
                             </form>
                         </div>
@@ -61,7 +49,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-search"></i></span>
                                         </div>
-                                        <input type="text" name="nama_lengkap" class="form-control" placeholder="Cari Warga...">
+                                        <input type="text" name="nama_lengkap" class="form-control" placeholder="Cari Perangkat">
                                     </div>
                                 </form>
                                 <button type="button" class="btn btn-success ml-2" data-toggle="modal" data-target="#rfidModal" title="Scan RFID">
@@ -108,7 +96,7 @@
                         <tr class="center">
                             <th>Foto</th>
                             <th>Nama</th>
-                            <th>Nik</th>
+                            <th>Pekerjaan</th>
                             <th>Nomor Hp</th>
                             <th>Aksi</th>
                         </tr>
@@ -136,7 +124,7 @@
                                 @endif
                             </td>
                             <td>{{ $w->nama_lengkap }}</td>
-                            <td>{{ $w->nik }}</td>
+                            <td>{{ $w->pekerjaan }}</td>
                             <td>{{ $w->no_hp }}</td>
                             <td>
                                 <a href="{{ route('petugas.show', $w->id) }}" class="view" title="View"

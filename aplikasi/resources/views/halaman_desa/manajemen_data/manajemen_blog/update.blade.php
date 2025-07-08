@@ -10,7 +10,7 @@
             <div class="col-md-12">
                 <div class="card card-primary">
                     <div class="card-header card-header-custom">
-                        <h3 class="card-title">Update Berita</h3>
+                        <h3 class="card-title">Update Galeri</h3>
                     </div>
                     <form action="{{ route('blog.update', $blog->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
@@ -40,12 +40,9 @@
                             <div class="form-group">
                                 <label>Kategori</label>
                                 <select name="kategori_blog" class="form-control">
-                                    <option value="berita"
-                                        {{ $blog->kategori_blog == 'berita' ? 'selected' : '' }}>Berita</option>
-                                    <option value="pengumuman"
-                                        {{ $blog->kategori_blog == 'pengumuman' ? 'selected' : '' }}>Pengumuman</option>
-                                    <option value="parawisata"
-                                        {{ $blog->kategori_blog == 'parawisata' ? 'selected' : '' }}>parawisata</option>
+                                    <option value="galery"
+                                        {{ $blog->kategori_blog == 'galery' ? 'selected' : '' }}>galery</option>
+                                    
                                 </select>
                             </div>
 
